@@ -1,0 +1,45 @@
+---
+kind: pipeline
+type: docker
+name: master build linux-amd64
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: runner identification
+  image: alpine
+  commands:
+  - echo $DRONE_RUNNER_NAME
+
+trigger:
+  branch:
+  - master
+  event:
+  - push
+
+---
+kind: pipeline
+type: docker
+name: pr build linux-amd64
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: runner identification
+  image: alpine
+  commands:
+  - echo $DRONE_RUNNER_NAME
+
+trigger:
+  event:
+  - pull_request
+
+---
+kind: signature
+hmac: 383f331597d611ab3d673323a14bb398bd05edee88372ee18884bb7678062fe0
+
+...
