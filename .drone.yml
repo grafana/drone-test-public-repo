@@ -38,11 +38,8 @@ trigger:
   event:
   - pull_request
 
-
 ---
 kind: signature
-hmac: f8834f0e881688cbc986d23361da0a0c3039a33e091f5fc6ad5c046ff5b71490
+hmac: 86008af2c4ec02917cfd0b799c3140c1def7c3d3899b8e39b868111c5b7340b5
 
 ...
-
-
