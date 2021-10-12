@@ -38,5 +38,9 @@ trigger:
   event:
   - pull_request
 
----
 
+---
+kind: signature
+hmac: f8834f0e881688cbc986d23361da0a0c3039a33e091f5fc6ad5c046ff5b71490
+
+...
