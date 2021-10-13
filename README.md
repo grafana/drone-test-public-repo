@@ -6,5 +6,5 @@ Pipelines included (so far):
 - PR build
 - Master build
 
-For tests that doesn't need a public repo setup fall back to [drone-test-repo](https://github.com/grafana/drone-test-repo).
+For tests that doesn't need a public repo setup fall backto [drone-test-repo](https://github.com/grafana/drone-test-repo).
 This repository won't implement all features of that test repository. 
